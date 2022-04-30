@@ -25,7 +25,25 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+throw this into the components
 
 ```php
-<?= \ulugbek\playmobile\Module; ?>```
+'sms' => [
+            'class' => \ulugbek\playmobile\components\Sms::class,
+        ],
+```
+
+
+throw this into the modules
+
+```php
+'playmobile' => [
+            'class' => 'ulugbek\playmobile\Modul',
+        ],
+```
+
+for migration
+
+```php
+php yii migrate/up --migrationPath=@vendor/ulugbek/playmobile/migrations
+```
