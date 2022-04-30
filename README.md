@@ -47,3 +47,7 @@ for migration
 ```php
 php yii migrate/up --migrationPath=@vendor/ulugbek/playmobile/migrations
 ```
+it can be used anywhere in the view
+```php
+Yii::$app->sms->send('998916700607', 'Your message')
+```
