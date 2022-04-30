@@ -14,6 +14,7 @@
         "yiisoft/yii2": "~2.0.0",
         "yiisoft/yii2-httpclient": "^2.0"
     },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "ulugbek\\playmobile\\": ""
