@@ -5,7 +5,7 @@ use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 
 /** @var $this \yii\web\View */
-/** @var \backend\modules\smsmanager\models\SmsSettings $model */
+/** @var \ulugbek\playmobile\models\SmsSettings $model */
 
 $this->title = Yii::t('app', 'Tahrirlash');
 

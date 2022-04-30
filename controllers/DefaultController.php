@@ -2,8 +2,8 @@
 
 namespace ulugbek\playmobile\controllers;
 
-use SendSms;
-use SmsSettings;
+use ulugbek\models\SendSms;
+use ulugbek\models\SmsSettings;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;

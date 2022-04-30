@@ -1,6 +1,6 @@
 <?php
 
-use common\modules\playmobile\models\SendSms;
+use ulugbek\playmobile\models\SendSms;
 use yii\bootstrap4\ActiveForm;
 use yii\helpers\Html;
 use yii\widgets\MaskedInput;
