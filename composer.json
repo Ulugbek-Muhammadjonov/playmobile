@@ -3,21 +3,21 @@
     "description": "Playmobile sms service",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","playmobile","sms","sms service","widget","ulugbek","muhammadjonov","send","uz"],
-    "license": "Apache-2.0",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Muhammadjonov Ulugbek",
             "email": "muhammadjonovulugbek98@gmail.com"
         }
     ],
-    "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "yiisoft/yii2-httpclient": "^2.0"
-    },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "ulugbek\\playmobile\\": "src"
         }
-    }
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-httpclient": "^2.0"
+    },
+    "minimum-stability": "dev"
 }
