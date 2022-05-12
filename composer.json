@@ -12,11 +12,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "ulugbek\\playmobile\\": "src"
+            "ulugbek\\playmobile\\": ""
         }
     },
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "yiisoft/yii2-httpclient": "^2.0"
-    }
+        "php": "7.*",
+        "ext-curl": "*"
+    },
+    "minimum-stability": "dev"
 }
