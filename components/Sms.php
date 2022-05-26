@@ -1,8 +1,8 @@
 <?php
 namespace ulugbek\playmobile\components;
 
-use ulugbek\playmobile\SmsSettings;
-use ulugbek\playmobile\Playmobile;
+use ulugbek\playmobile\models\SmsSettings;
+use ulugbek\playmobile\models\Playmobile;
 use yii\base\Component;
 use yii\helpers\Json;
 

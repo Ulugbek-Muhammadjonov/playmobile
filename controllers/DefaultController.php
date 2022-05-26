@@ -2,8 +2,8 @@
 
 namespace ulugbek\playmobile\controllers;
 
-use ulugbek\models\SendSms;
-use ulugbek\models\SmsSettings;
+use ulugbek\playmobile\models\SendSms;
+use ulugbek\playmobile\models\SmsSettings;
 use Yii;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
@@ -26,7 +26,7 @@ class DefaultController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin'],
+                        'roles' => ['?'],
                     ],
                 ],
             ]

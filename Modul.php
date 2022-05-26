@@ -1,6 +1,6 @@
 <?php
 
-namespace common\modules\playmobile;
+namespace ulugbek\playmobile;
 
 /**
  * playmobile module definition class
@@ -10,7 +10,7 @@ class Modul extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'common\modules\playmobile\controllers';
+    public $controllerNamespace = 'ulugbek\playmobile\controllers';
 
     /**
      * {@inheritdoc}
