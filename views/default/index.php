@@ -1,26 +1,25 @@
 <?php
-
-use ulugbek\playmobile\models\SendSms;
-use yii\bootstrap4\ActiveForm;
+use Yii;
 use yii\helpers\Html;
+use yii\bootstrap4\ActiveForm;
 use yii\widgets\MaskedInput;
+use ulugbek\playmobile\models\SendSms;
 
 /** @var SendSms $model */
 
-$this->title = "SMS sozlarmalari";
+$this->title = Yii::t('app','SMS sozlarmalari');
 ?>
-<h1><?= $this->title ?></h1>
 
 <div class="row">
     <div class="col-md-6">
         <p>
-            <?= Html::a('<i class="fas fa-cogs"></i> SMS sozlarmalari', ['settings'], ['class' => 'btn btn-info']) ?>
+            <?= Html::a('<i class="fas fa-cogs"></i> '.Yii::t('app','SMS sozlarmalari'), ['settings'], ['class' => 'btn btn-info']) ?>
         </p>
     </div>
     <div class="col-md-6">
         <div class="card">
             <div class="card-header">
-                Xabar yuborish (Pullik)
+                <?=Yii::t('app','Xabar yuborish (Pullik)') ?>
             </div>
             <div class="card-body">
                 <?php $form = ActiveForm::begin() ?>
@@ -35,7 +34,7 @@ $this->title = "SMS sozlarmalari";
                 ]) ?>
                 <?= $form->field($model, 'message')->textarea() ?>
                 <div class="form-group">
-                    <?= Html::submitButton('Xabar yuborish', ['class' => 'btn btn-success']) ?>
+                    <?= Html::submitButton(Yii::t('app','Xabar yuborish'), ['class' => 'btn btn-success']) ?>
                 </div>
                 <?php ActiveForm::end() ?>
             </div>

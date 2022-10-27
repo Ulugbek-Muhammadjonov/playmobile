@@ -29,8 +29,8 @@ throw this into the components
 
 ```php
 'sms' => [
-            'class' => \ulugbek\playmobile\components\Sms::class,
-        ],
+    'class' => \ulugbek\playmobile\components\Sms::class,
+],
 ```
 
 
@@ -38,8 +38,8 @@ throw this into the modules
 
 ```php
 'playmobile' => [
-            'class' => 'ulugbek\playmobile\Modul',
-        ],
+    'class' => 'ulugbek\playmobile\Modul',
+],
 ```
 
 for migration

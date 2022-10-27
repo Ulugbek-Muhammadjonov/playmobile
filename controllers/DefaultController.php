@@ -2,27 +2,25 @@
 
 namespace ulugbek\playmobile\controllers;
 
+use Yii;
+use yii\web\Controller;
+use yii\filters\AccessControl;
+use yii\data\ActiveDataProvider;
+use yii\web\NotFoundHttpException;
 use ulugbek\playmobile\models\SendSms;
 use ulugbek\playmobile\models\SmsSettings;
-use Yii;
-use yii\data\ActiveDataProvider;
-use yii\web\Controller;
-use yii\web\NotFoundHttpException;
 
 /**
  * Default controller for the `playmobile` module
  */
-class DefaultController extends Controller
-{
-    /**
-     * {@inheritdoc}
-     */
-    public function behaviors()
+class DefaultController extends Controller {
+
+    public function behaviors(): array
     {
         return [
 
             'access' => [
-                'class' => \yii\filters\AccessControl::className(),
+                'class' => AccessControl::className(),
                 'rules' => [
                     [
                         'allow' => true,
@@ -37,23 +35,19 @@ class DefaultController extends Controller
      * Renders the index view for the module
      * @return string
      */
-    public function actionIndex()
+    public function actionIndex(): string
     {
         $model = new SendSms();
-
         if ($model->load(Yii::$app->request->post())) {
 
             $send = Yii::$app->sms->send($model->phone, $model->message);
             if ($send) {
-                Yii::$app->session->setFlash('success', 'Xabar yuborildi!');
+                Yii::$app->session->setFlash('success', Yii::t('app', 'Xabar yuborildi!'));
             } else {
-
-                Yii::$app->session->setFlash('error', 'Xabar yuborilmadi! Muammo mavjud');
+                Yii::$app->session->setFlash('error', Yii::t('app', 'Xabar yuborilmadi! Muammo mavjud'));
             }
-
             return $this->redirect(['index']);
         }
-
         return $this->render('index', [
             'model' => $model
         ]);
@@ -86,5 +80,4 @@ class DefaultController extends Controller
         ]);
 
     }
-
 }

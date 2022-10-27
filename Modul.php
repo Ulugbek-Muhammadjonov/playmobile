@@ -2,10 +2,12 @@
 
 namespace ulugbek\playmobile;
 
+use yii\base\Module;
+
 /**
  * playmobile module definition class
  */
-class Modul extends \yii\base\Module
+class Modul extends Module
 {
     /**
      * {@inheritdoc}

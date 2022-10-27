@@ -4,6 +4,7 @@
 namespace ulugbek\playmobile\models;
 
 use Yii;
+use \yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
 /**
@@ -16,10 +17,10 @@ use yii\behaviors\TimestampBehavior;
  * @property int $created_at [int(11)]
  * @property int $updated_at [int(11)]
  */
-class SmsSettings extends \yii\db\ActiveRecord
+class SmsSettings extends ActiveRecord
 {
 
-    public static function tableName()
+    public static function tableName(): string
     {
         return 'play_mobile_sms_settings';
     }
@@ -32,21 +33,19 @@ class SmsSettings extends \yii\db\ActiveRecord
         ];
     }
 
-    public function behaviors()
+    public function behaviors(): array
     {
         return [
             TimestampBehavior::class,
         ];
     }
 
-    public function attributeLabels()
+    public function attributeLabels(): array
     {
         return [
-
             'idn' => Yii::t('app', 'Identifikator'),
             'name' => Yii::t('app', "Nomi"),
             'value' => Yii::t('app', 'Qiymati'),
-
         ];
     }
 }

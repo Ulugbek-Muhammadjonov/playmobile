@@ -1,8 +1,8 @@
 <?php
 
 
-use yii\widgets\ActiveForm;
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 
 /** @var $this \yii\web\View */
 /** @var \ulugbek\playmobile\models\SmsSettings $model */
@@ -14,7 +14,6 @@ $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'SMS sozlamalari'), '
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<h1><?= Html::encode($this->title) ?></h1>
 <div class="card">
     <div class="card-body">
         <?php $form = ActiveForm::begin() ?>

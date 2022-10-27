@@ -41,6 +41,6 @@ class m210828_063514_create_sms_settings_table extends Migration
      */
     public function safeDown()
     {
-        $this->dropTable('{{%sms_settings}}');
+        $this->dropTable('{{%play_mobile_sms_settings}}');
     }
 }
