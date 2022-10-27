@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             'style' => 'word-wrap:anywhere',
                         ],
                     ],
-                    'updated_at:datetime',
+//                    'updated_at:datetime',
                     [
                         'class' => 'yii\grid\ActionColumn',
                         'template' => '{update}',
