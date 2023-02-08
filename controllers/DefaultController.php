@@ -15,7 +15,7 @@ use ulugbek\playmobile\models\SmsSettings;
  */
 class DefaultController extends Controller {
 
-    public function behaviors(): array
+    public function behaviors()
     {
         return [
 
@@ -35,7 +35,7 @@ class DefaultController extends Controller {
      * Renders the index view for the module
      * @return string
      */
-    public function actionIndex(): string
+    public function actionIndex()
     {
         $model = new SendSms();
         if ($model->load(Yii::$app->request->post())) {
